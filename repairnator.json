@@ -1,0 +1,202 @@
+{
+  "repository": {
+    "name": "Luki42/lang-304",
+    "githubId": 246286603,
+    "url": "https://github.com/Luki42/lang-304",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 660593740,
+      "url": "http://travis-ci.org/Luki42/lang-304/builds/660593740",
+      "date": "Mar 10, 2020 1:15:19 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 11:58:48 AM",
+    "reproductionDateEnd": "Mar 18, 2020 12:01:07 PM",
+    "machineInfo": {
+      "hostName": "7806c6227229",
+      "numberCPU": 8,
+      "freeMemory": 147725096,
+      "totalMemory": 197656576
+    },
+    "totalDuration": 137,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 44,
+        "stepNames": [
+          "CheckoutBuggyBuild",
+          "BuildProject"
+        ],
+        "stepDurations": [
+          0,
+          44
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "TestProject"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 77,
+        "stepNames": [
+          "NPEFix"
+        ],
+        "stepDurations": [
+          77
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Luki42/lang-304/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 345
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Luki42/lang-304",
+    "overallMetrics": {
+      "numberRunning": 11,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 11,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 11
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "numberRunning": 11,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 11,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testToLocale_3Part",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testAvailableLocaleList",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testLocaleLookupList_Locale",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testToLocale_1Part",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testCountriesByLanguage",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testLocaleLookupList_LocaleLocale",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testIsAvailableLocale",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testLanguagesByCountry",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testToLocale_2Part",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testConstructor",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang.LocaleUtilsTest",
+        "testMethod": "testAvailableLocaleSet",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 77,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 1,
+    "numberLines": 17281
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Luki42/lang-304",
+      "branchName": "master",
+      "sha": "795187fac5a84e310bc14fd8db1a97bae6670ffc",
+      "url": "http://github.com/Luki42/lang-304/commit/795187fac5a84e310bc14fd8db1a97bae6670ffc",
+      "date": "Mar 10, 2020 1:12:27 PM"
+    }
+  },
+  "type": "only_fail"
+}
